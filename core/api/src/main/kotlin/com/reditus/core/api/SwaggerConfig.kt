@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration
 
 
 @Configuration
-class SwaggerConfig(
+internal class SwaggerConfig(
     @Value("\${swagger-config.title}") private val title: String,
     @Value("\${swagger-config.description}") private val description: String,
 ) {

@@ -6,7 +6,7 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 
 @Component
-class SystemTimeHolder : TimeHolder {
+internal class SystemTimeHolder : TimeHolder {
     override fun now(): Long {
         return System.currentTimeMillis()
     }

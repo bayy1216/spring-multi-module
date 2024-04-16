@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice
 
 
 @RestControllerAdvice
-class ApiExceptionControllerAdvice {
+internal class ApiExceptionControllerAdvice {
     private val log = LoggerFactory.getLogger(this::class.java)
 
     @ExceptionHandler
