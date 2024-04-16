@@ -1,4 +1,7 @@
 package com.reditus.core.common.exception
 
-class NotAuthorizedException(message: String) : RuntimeException(message) {
+class NotAuthorizedException: RuntimeException {
+    constructor(message: String): super(message)
+    constructor(message: String, cause: Throwable): super(message, cause)
+
 }

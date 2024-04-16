@@ -48,10 +48,8 @@ class JwtProvider(
     fun validateToken(rawToken: String, isAccessToken:Boolean = true) : Boolean {
         val claims = extractClaims(rawToken)
         val expiration = claims.expiration
-        if(!isAccessToken && !(claims[IS_ACCESS] as Boolean)){
-            return false
-        }
-        return expiration.after(Date())
+
+        return expiration.after(Date()) && claims[IS_ACCESS] == isAccessToken
     }
 
     private fun extractClaims(rawToken: String): Claims {
