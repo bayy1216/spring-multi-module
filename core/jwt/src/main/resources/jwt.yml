@@ -1,0 +1,4 @@
+jwt:
+  secret: 31312312-3123asf-sdafasd-fasdgsadg
+  accessTokenExpireTime: 3600
+  refreshTokenExpireTime: 86400

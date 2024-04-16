@@ -1,0 +1,8 @@
+version: ${applicationVersion:0.0.1} # Build시에는 applicationVersion이 주입된다.
+
+spring:
+  config:
+    import:
+      - jwt.yml
+      - jpa.yml
+      - api.yml
